@@ -91,7 +91,7 @@ button:hover {
 }
 
 h1, .modal-content h2, .modal-content p {
-  color: #5d5f5e;
+  color: rgb(60, 61, 60);
 }
 
 .close {
@@ -100,7 +100,8 @@ h1, .modal-content h2, .modal-content p {
 
 /* Adding a fancy border to the certificate content */
 #certificateContent {
-  background: #f9f9f9 url('path/to/your/decorative-border-image.png') center/contain no-repeat;
+  background:#f9f6f6 url('images/output-onlinepngtools.png') center/contain no-repeat;
+
 }
 
 /* Adjust button styles to fit the theme */
