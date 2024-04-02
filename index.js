@@ -23,24 +23,31 @@ document.addEventListener('DOMContentLoaded', function () {
       alert('Please fill in all fields');
       return;
     }
+
+    // 🚨 Generate certificate content dynamically
+    certificateContent.innerHTML = `
+    <h1>Certificate of Achievement</h1>
+    <p>This is to certify that</p>
+    <h2>${studentName}</h2>
+    <p>has completed the</p>
+    <h2>${courseNameInput.value} Course</h2>
+    <p>with legendary perseverence and world-class bad-assery for never giving up🏆</p>
+    <img src="logo.png" alt="logo image" style="max-height: 100px; max-width: 200px;">
+    <p>${personalMessage}</p>
+
+  `;
   
-      // 🚨 Generate certificate content dynamically
-      certificateContent. = `
-      <h3>${studentName}</h3>
-    `;
-    
-      //  Display the modal
-      modal.style.display = 'block';
-  
-      // Clear the form inputs
-      studentNameInput.value = '';
-      personalMessageInput.value = '';
-      if(courseNameInput) courseNameInput.value = '';
-    });
-  
-    //  🚨 Close the modal when the close button is clicked
-    closeModal.addEventListener('click', function () {
-      modal.style.display = 'none';
-    });
+    //  Display the modal
+    modal.style.display = 'block';
+
+    // Clear the form inputs
+    studentNameInput.value = '';
+    personalMessageInput.value = '';
+    if(courseNameInput) courseNameInput.value = '';
   });
-  
+
+  //  🚨 Close the modal when the close button is clicked
+  closeModal.addEventListener('click', function () {
+    modal.style.display = 'none';
+  });
+});
