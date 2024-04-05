@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <p>has completed the</p>
     <h2>${courseNameInput.value} Course</h2>
     <p>with legendary perseverence and world-class bad-assery for never giving up🏆</p>
-    <img src="logo.png" alt="logo image" style="max-height: 200px; max-width: 400px;">
+    <img src="images/logo.png" alt="logo image" style="max-height: 200px; max-width: 400px;">
     <p>${personalMessage}</p>
 
   `;
